@@ -1,4 +1,4 @@
-package com.example.hoichi.presentation.city_screen
+package com.example.hoichi.presentation.drink_list_screen
 
 import com.example.hoichi.domain.data.Drink
 

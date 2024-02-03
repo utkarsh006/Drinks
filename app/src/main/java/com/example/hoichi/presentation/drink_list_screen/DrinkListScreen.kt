@@ -1,4 +1,4 @@
-package com.example.hoichi.presentation.city_screen
+package com.example.hoichi.presentation.drink_list_screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -24,6 +24,8 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.hoichi.NavScreen
+import com.example.hoichi.presentation.drink_list_screen.components.DrinkListItem
+import com.example.hoichi.presentation.drink_list_screen.components.SearchComponent
 import com.google.gson.Gson
 
 

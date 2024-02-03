@@ -1,4 +1,4 @@
-package com.example.hoichi.presentation.city_screen
+package com.example.hoichi.presentation.drink_list_screen
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf

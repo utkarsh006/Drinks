@@ -11,8 +11,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.hoichi.domain.data.Drink
-import com.example.hoichi.presentation.city_screen.DrinkListScreen
-import com.example.hoichi.presentation.details_screen.DrinkDetailScreen
+import com.example.hoichi.presentation.drink_list_screen.DrinkListScreen
+import com.example.hoichi.presentation.drink_details_screen.DrinkDetailScreen
 import com.google.gson.Gson
 
 @Composable

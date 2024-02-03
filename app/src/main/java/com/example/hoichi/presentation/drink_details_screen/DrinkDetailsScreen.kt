@@ -1,4 +1,4 @@
-package com.example.hoichi.presentation.details_screen
+package com.example.hoichi.presentation.drink_details_screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -16,7 +16,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.hoichi.domain.data.Drink
-import com.example.hoichi.presentation.city_screen.DrinkListItem
+import com.example.hoichi.presentation.drink_list_screen.components.DrinkListItem
 
 @Composable
 fun DrinkDetailScreen(

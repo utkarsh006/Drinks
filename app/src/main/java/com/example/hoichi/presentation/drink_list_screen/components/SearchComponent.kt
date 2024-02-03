@@ -1,4 +1,4 @@
-package com.example.hoichi.presentation.city_screen
+package com.example.hoichi.presentation.drink_list_screen.components
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -19,6 +19,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.hoichi.presentation.drink_list_screen.DrinkListViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
