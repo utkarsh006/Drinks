@@ -7,5 +7,6 @@
     <string name="time">10:00AM - 3:30PM</string>
     <string name="steve">Steve ST Road</string>
     <string name="rating">4.5 ⭐️</string>
+    <string name="search_drink">Search a Drink</string>
 
 </resources>

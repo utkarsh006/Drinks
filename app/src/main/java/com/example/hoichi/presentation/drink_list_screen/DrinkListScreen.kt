@@ -3,6 +3,7 @@ package com.example.hoichi.presentation.drink_list_screen
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -35,7 +36,6 @@ import com.example.hoichi.presentation.drink_list_screen.components.StaticCompon
 import com.example.hoichi.presentation.drink_list_screen.components.TextComponent
 import com.google.gson.Gson
 
-
 @Composable
 fun DrinkListScreen(
     navController: NavController,
@@ -47,12 +47,14 @@ fun DrinkListScreen(
 
     Column(modifier = Modifier.fillMaxSize()) {
 
-        TextComponent(
-            text = stringResource(id = R.string.lets_eat),
-            fontWeight = FontWeight.Bold,
-            fontSize = 32f,
-            color = Color.Black
-        )
+        Row(modifier = Modifier.padding(12.dp)) {
+            TextComponent(
+                text = stringResource(id = R.string.lets_eat),
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 32f,
+                color = Color.Black
+            )
+        }
 
         Spacer(modifier = Modifier.height(18.dp))
 
