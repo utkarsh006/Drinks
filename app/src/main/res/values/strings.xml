@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Drinks</string>
+    <string name="lets_eat">Let\'s eat Quality Food</string>
+    <string name="near">Near Restaurant</string>
+    <string name="see">See All</string>
+    <string name="blue">Blue Restaurant</string>
+    <string name="time">10:00AM - 3:30PM</string>
+    <string name="steve">Steve ST Road</string>
+    <string name="rating">4.5 ⭐️</string>
+
 </resources>

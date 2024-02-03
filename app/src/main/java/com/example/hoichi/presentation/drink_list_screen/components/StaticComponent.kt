@@ -10,22 +10,22 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.example.hoichi.R
 
 @Composable
 fun StaticComponent() {
     Spacer(modifier = Modifier.height(18.dp))
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -33,14 +33,17 @@ fun StaticComponent() {
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Text(
-            text = "Near Restaurant",
-            fontSize = 20.sp,
+        TextComponent(
+            text = stringResource(id = R.string.near),
             fontWeight = FontWeight.Bold,
+            fontSize = 20f,
             color = Color.Black
         )
-        Text(
-            text = "See All", fontSize = 15.sp, fontWeight = FontWeight.Medium,
+
+        TextComponent(
+            text = stringResource(id = R.string.see),
+            fontWeight = FontWeight.Medium,
+            fontSize = 15f,
             color = Color.Black
         )
     }
@@ -59,29 +62,28 @@ fun StaticComponent() {
             contentScale = ContentScale.Crop,
             modifier = Modifier
                 .fillMaxWidth(0.4f)
-                .height(84.dp)
+                .height(85.dp)
                 .clip(RoundedCornerShape(14.dp))
         )
 
         Spacer(modifier = Modifier.width(14.dp))
 
         Column {
-            Text(
-                text = "Blue Restaurant",
-                fontSize = 20.sp,
+            TextComponent(
+                text = stringResource(id = R.string.blue),
                 fontWeight = FontWeight.Bold,
+                fontSize = 20f,
                 color = Color.Black
             )
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            Text(
-                text = "10:00AM - 3:30PM",
-                fontSize = 15.sp,
+            TextComponent(
+                text = stringResource(id = R.string.time),
                 fontWeight = FontWeight.Bold,
+                fontSize = 15f,
                 color = Color.Gray
             )
-
 
             Spacer(modifier = Modifier.height(8.dp))
 
@@ -89,17 +91,17 @@ fun StaticComponent() {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text(
-                    text = "Steve ST Road",
-                    fontSize = 15.sp,
+                TextComponent(
+                    text = stringResource(id = R.string.steve),
                     fontWeight = FontWeight.Bold,
+                    fontSize = 15f,
                     color = Color(0xFFDA4747)
                 )
 
-                Text(
-                    text = "4.5 ⭐️",
-                    fontSize = 15.sp,
+                TextComponent(
+                    text = stringResource(id = R.string.rating),
                     fontWeight = FontWeight.Medium,
+                    fontSize = 15f,
                     color = Color.Black
                 )
             }
