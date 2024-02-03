@@ -18,7 +18,6 @@ import androidx.compose.ui.unit.sp
 import com.example.hoichi.domain.data.Drink
 import com.example.hoichi.presentation.city_screen.DrinkListItem
 
-
 @Composable
 fun DrinkDetailScreen(
     drink: Drink
@@ -36,6 +35,18 @@ fun DrinkDetailScreen(
             Text(
                 modifier = Modifier.padding(8.dp),
                 text = drink.drinkInstructions,
+                style = TextStyle(
+                    fontSize = 10.sp,
+                    fontFamily = FontFamily.SansSerif,
+                    color = Color.Magenta
+                )
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            Text(
+                modifier = Modifier.padding(8.dp),
+                text = "Drink Category : ${drink.drinkCategory}",
                 style = TextStyle(
                     fontSize = 10.sp,
                     fontFamily = FontFamily.SansSerif,

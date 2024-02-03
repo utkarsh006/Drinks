@@ -62,7 +62,7 @@ fun DrinkListScreen(
                         onItemClicked = {
                             val drinkString = Gson().toJson(drink)
                             navController.navigate(
-                                NavScreen.DrinkDetailScreen.route + "?meal=$drinkString"
+                                NavScreen.DrinkDetailScreen.route + "?drink=$drinkString"
                             )
                         }
                     )
