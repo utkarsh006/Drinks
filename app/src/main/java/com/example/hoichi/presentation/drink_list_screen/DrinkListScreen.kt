@@ -19,13 +19,17 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.hoichi.NavScreen
 import com.example.hoichi.presentation.drink_list_screen.components.DrinkListItem
 import com.example.hoichi.presentation.drink_list_screen.components.SearchComponent
+import com.example.hoichi.presentation.drink_list_screen.components.StaticComponent
 import com.google.gson.Gson
 
 
@@ -39,8 +43,18 @@ fun DrinkListScreen(
     val isSearching by viewModel.isSearching.collectAsState()
 
     Column(modifier = Modifier.fillMaxSize()) {
+        Text(
+            text = "Let's eat Quality Food",
+            fontSize = 32.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Black
+        )
+
+        Spacer(modifier = Modifier.height(18.dp))
 
         SearchComponent(searchText = searchText, isSearching = isSearching)
+
+        StaticComponent()
 
         Spacer(modifier = Modifier.height(16.dp))
 
